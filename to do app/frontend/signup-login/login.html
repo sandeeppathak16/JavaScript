@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To do</title>
+  </head>
+  <body>
+    <div class="login-image">
+      <img src="login.png" />
+    </div>
+    <div class="login-form">
+      <div id="registration-form-icon">
+        <a href="signup.html">
+          <img id="registration-form-image" src="content-creator.png" />
+        </a>
+      </div>
+
+      <h1
+        style="
+          font-size: 1.5rem;
+          color: #7880dd;
+          margin-bottom: 0.2rem;
+          margin-top: 0.2rem;
+        "
+      >
+        Log In
+      </h1>
+      <p style="margin-top: 0.15rem; margin-bottom: 2rem; color: #7880dd">
+        Enter your credentials
+      </p>
+      <form id="loginForm">
+        <input
+          type="text"
+          name="username"
+          minlength="6"
+          maxlength="20"
+          required,
+          placeholder="username"
+        /><br /><br />
+        <input
+          type="text"
+          name="password"
+          minlength="6"
+          maxlength="20"
+          required,
+          placeholder="password"
+          style="margin-bottom: 0%"
+        /><br /><br />
+        <div id="forget-password">
+          <a style="color: #7880dd" href="forget-password.html"
+            >forget password</a
+          >
+        </div>
+        <input type="button" class="button" value="Submit" />
+        <!-- <div class="flex-parent jc-center">
+          <input type="button" class="button" value="Submit" />
+        </div> -->
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#loginForm").submit(function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Access the form elements and their values using jQuery
+          var username = $("#username").val();
+          var password = $("#password").val();
+
+          // Do something with the username and password, like sending them to a server
+          console.log("Username:", username);
+          console.log("Password:", password);
+        });
+      });
+    </script>
+  </body>
+</html>

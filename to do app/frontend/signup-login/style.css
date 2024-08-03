@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: verdana;
+}
+
+.login-image {
+  padding-right: 40px;
+}
+
+::placeholder {
+  color: rgb(187, 186, 210);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid #9994ee;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 0%;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #602ee9;
+}
+
+input[type="text"]:hover {
+  border: 3px solid #602ee9;
+}
+
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.button {
+  background-color: #8c6be7;
+  border-radius: 5px;
+  border: none;
+  color: rgb(202, 202, 216);
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5b29e5;
+}
+
+#registration-form-icon {
+  position: relative;
+}
+
+#registration-form-image {
+  position: absolute;
+  height: 30px;
+  margin-left: 90%;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+#forget-password {
+  margin-top: 0px;
+  font-size: 0.7rem;
+  margin-left: 54%;
+  padding-left: 0%;
+  margin-bottom: 10px;
+}
